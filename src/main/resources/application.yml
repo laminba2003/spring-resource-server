@@ -1,0 +1,14 @@
+server: 
+  port: 8082
+  servlet: 
+    context-path: /resource-server-jwt
+
+logging.level.org.springframework.security: DEBUG
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8083/auth/realms/example
+          
